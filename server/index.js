@@ -4,7 +4,7 @@ import cors from 'cors';
 
 import dalleRoutes from './routes/dalle.routes.js'
 
-dotenv.config();
+dotenv.config(process.env);
 
 const app = express();
 app.use(cors());
