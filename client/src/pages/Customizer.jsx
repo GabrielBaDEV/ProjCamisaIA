@@ -46,7 +46,7 @@ const Customizer = () => {
         return null;
     }
   }
-   const handleSubmit = async(type) => {
+  const handleSubmit = async(type) => {
     if(!prompt) return alert("Please enter a prompt");
     try {
       // chamar nosso backend para gerar uma imagem IA!
@@ -119,7 +119,7 @@ const Customizer = () => {
   }
 
   return (
-   <AnimatePresence>
+  <AnimatePresence>
       {!snap.intro && (
         <>
           <motion.div
@@ -127,29 +127,29 @@ const Customizer = () => {
             className="absolute top-0 left-0 z-10"
             {...slideAnimation('left')}
           >
-           <div className="flex items-center min-h-screen">
+          <div className="flex items-center min-h-screen">
             <div className="editortabs-container tabs">
-             {EditorTabs.map((tab) => (
+            {EditorTabs.map((tab) => (
                 <Tab
                   key={tab.name}
                   tab={tab}
                   handleClick={() => setActiveEditorTab(tab.name)}
                 />
-             ))}
+            ))}
 
-             {generateTabContent()}
+            {generateTabContent()}
             </div>
-           </div>
+          </div>
           </motion.div>
           <motion.div
             className="absolute z-10 top-5 right-5" 
             {...fadeAnimation}
           >
             <CustomButton
-             type="filled"
-             title="Voltar"
-             handleClick={() => state.intro = true}
-             customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+            type="filled"
+            title="Voltar"
+            handleClick={() => state.intro = true}
+            customStyles="w-fit px-4 py-2.5 font-bold text-sm"
             />
           </motion.div>
 
@@ -165,11 +165,11 @@ const Customizer = () => {
                 isActiveTab={activeFilterTab[tab.name]}
                 handleClick={() => handleActiveFilterTab(tab.name)}
               />
-             ))}
+            ))}
           </motion.div>
         </>
       )}
-   </AnimatePresence>
+  </AnimatePresence>
   )
 }
 
