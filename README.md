@@ -1,4 +1,4 @@
-# Projeto de Camiseta
+# Projeto de customização de camisetas
 Customização de camisetas em um ambiente 3D usando React + Vite
 
 ![alt text](https://github.com/nxgabriel/ProjCamisaIA/blob/main/client/src/assets/vitereactintroduction.gif?raw=true)
