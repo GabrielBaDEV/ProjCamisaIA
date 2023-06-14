@@ -24,14 +24,12 @@ const AIPicker = ({ prompt, setPrompt, generatingImg, handleSubmit}) => {
             <CustomButton
               type="outline"
               title="IA Logo"
-              handleClick={() => handleSubmit('logo')}
               customStyles="text-xs"
             />
 
-             <CustomButton
+            <CustomButton
               type="filled"
               title="IA Full"
-              handleClick={() => handleSubmit('full')}
               customStyles="text-xs"
             />
           </>
