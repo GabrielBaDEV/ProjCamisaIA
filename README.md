@@ -1,5 +1,6 @@
 # Projeto de customização de camisetas
-Customização de camisetas em um ambiente 3D usando React + Vite
+Customização de camisetas em um ambiente 3D usando React + Vite.
+O projeto permite que os usuários escolham cores diferentes, carreguem qualquer arquivo que desejem para implementar em um camiseta em 3D
 
 ![alt text](https://github.com/nxgabriel/ProjCamisaIA/blob/main/client/src/assets/vitereactintroduction.gif?raw=true)
 
